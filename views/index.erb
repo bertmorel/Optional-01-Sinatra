@@ -1,0 +1,5 @@
+<% @recettes.each_with_index do |recipe, index| %>
+  <p>  <%= "#{index + 1} - #{recipe.done ? '[X]' : '[ ]'} #{recipe.name} - #{recipe.duration} " %>  <a href=<%="/destroy/#{index}"%> >  "destroy"  </a> </p>
+   <% end %>
+  <a href="/new"> <%= "new" %> </a>
+
